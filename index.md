@@ -1,10 +1,12 @@
 ---
 layout: default
-title: Files to Copy Over
+title: Main Page
 ---
 
 # Wsp.
 
-> This page is only for SFC™ Staff only!
+You've reached the main page for SFC™ Notes! Here you will find full README files for specific tasks or long messages :D
 
 [Files to Copy Over (Freecam+ and Taco Tuesday)](https://speedycoder1192.qzz.io/latestmsg/filestocopy)
+
+> This page is only for SFC™ Staff only!
