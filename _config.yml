@@ -1,0 +1,7 @@
+theme: jekyll-theme-minima
+title: SFC Notes
+description: Dark mode only
+
+# Force dark mode
+sass:
+  style: compressed
