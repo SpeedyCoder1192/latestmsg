@@ -1,3 +1,8 @@
+---
+layout: default
+title: Files to Copy Over
+---
+
 # Wsp.
 
 > This page is only for SFC™ Staff only!
