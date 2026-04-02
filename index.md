@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Main Page
+theme: jekyll-theme-minima
 ---
 
 # Wsp.
