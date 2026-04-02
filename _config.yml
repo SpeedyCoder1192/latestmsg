@@ -1,7 +1,3 @@
-theme: jekyll-theme-minima
+theme: jekyll-theme-midnight
 title: SFC Notes
 description: Dark mode only
-
-# Force dark mode
-sass:
-  style: compressed
