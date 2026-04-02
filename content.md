@@ -1,9 +1,3 @@
----
-layout: default
-title: Main Page
-theme: jekyll-theme-minima
----
-
 # Wsp.
 
 > This page is only for SFC™ Staff only!
