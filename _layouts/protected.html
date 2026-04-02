@@ -1,0 +1,11 @@
+---
+layout: default
+---
+
+<script>
+  if (sessionStorage.getItem('unlocked') !== 'true') {
+    window.location.href = '/key.html';
+  }
+</script>
+
+{{ content }}
