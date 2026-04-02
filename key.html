@@ -18,62 +18,44 @@
       min-height: 100vh;
       background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
       font-family: sans-serif;
-      transition: background 0.3s;
-    }
-
-    body.dark-mode {
-      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
     }
 
     .container {
-      background: white;
+      background: #121212;
       padding: 40px;
       border-radius: 10px;
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
       text-align: center;
       max-width: 400px;
       width: 90%;
-      transition: background 0.3s, color 0.3s;
-    }
-
-    body.dark-mode .container {
-      background: #2d2d2d;
-      color: #ffffff;
+      color: #e0e0e0;
     }
 
     h1 {
       margin-bottom: 10px;
       font-size: 28px;
+      color: #ffffff;
     }
 
     p {
       margin-bottom: 30px;
-      color: #666;
-    }
-
-    body.dark-mode p {
-      color: #aaa;
+      color: #b0bec5;
     }
 
     input {
       width: 100%;
       padding: 12px;
       margin-bottom: 20px;
-      border: 2px solid #ddd;
+      border: 2px solid #333;
       border-radius: 5px;
       font-size: 16px;
-      transition: border 0.3s;
-    }
-
-    body.dark-mode input {
-      background: #3d3d3d;
-      color: #ffffff;
-      border-color: #555;
+      background: #1e1e1e;
+      color: #e0e0e0;
     }
 
     input:focus {
       outline: none;
-      border-color: #667eea;
+      border-color: #64b5f6;
     }
 
     button {
@@ -93,20 +75,9 @@
     }
 
     .error {
-      color: #e74c3c;
+      color: #ff6b6b;
       margin-top: 15px;
       display: none;
-    }
-
-    body.dark-mode .error {
-      color: #ff6b6b;
-    }
-
-    .toggle-dark {
-      margin-top: 20px;
-      font-size: 24px;
-      cursor: pointer;
-      user-select: none;
     }
   </style>
 </head>
@@ -117,7 +88,6 @@
     <input type="password" id="passcode" placeholder="Enter passcode" />
     <button onclick="checkPasscode()">Unlock</button>
     <div class="error" id="error">❌ Incorrect passcode</div>
-    <div class="toggle-dark" onclick="toggleDarkMode()">🌙</div>
   </div>
 
   <script>
@@ -137,16 +107,6 @@
     document.getElementById('passcode').addEventListener('keypress', (e) => {
       if (e.key === 'Enter') checkPasscode();
     });
-
-    function toggleDarkMode() {
-      document.body.classList.toggle('dark-mode');
-      localStorage.setItem('darkMode', document.body.classList.contains('dark-mode'));
-    }
-
-    // Load dark mode preference
-    if (localStorage.getItem('darkMode') === 'true') {
-      document.body.classList.add('dark-mode');
-    }
   </script>
 </body>
 </html>
